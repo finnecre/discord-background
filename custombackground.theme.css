@@ -1,0 +1,182 @@
+/**
+ * @name custom background
+ * @author finnecre
+ * @version 4.6.0
+ * @description custom background and server columns with no other changes.
+ */
+
+@import url('https://raw.githubusercontent.com/finnecre/discord-background/refs/heads/main/servercolumns.css');
+
+/* CUSTOMIZE HERE */
+:root {
+    --wallpaper: url('WALLPAPER-LINK');
+
+    --columns: 0;
+}
+
+/* SETTINGS */
+:root {
+    --wallpaper-size: cover;
+    --wallpaper-position: center;
+
+    --guildgap: 3;
+    --aligndms: 0;
+}
+
+/* WALLPAPER */
+body {
+    background-image: var(--wallpaper);
+    background-size: var(--wallpaper-size);
+    background-position: var(--wallpaper-position);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#app-mount {
+    background: transparent !important;
+}
+
+#app-mount > [class*="app_"] > [class*="app_"] > [class*="bg_"] {
+    background: transparent !important;
+}
+
+/* LIGHT MODE */
+.theme-light {
+    --background-base-lowest: rgba(255, 255, 255, 0.32);
+    --background-base-lower: rgba(255, 255, 255, 0.25);
+    --background-base-low: rgba(255, 255, 255, 0.20);
+
+    --background-primary: rgba(255, 255, 255, 0.25);
+    --background-secondary: rgba(255, 255, 255, 0.20);
+    --background-secondary-alt: rgba(255, 255, 255, 0.16);
+    --background-tertiary: rgba(255, 255, 255, 0.14);
+
+    --bg-base-primary: rgba(255, 255, 255, 0.25);
+    --bg-base-secondary: rgba(255, 255, 255, 0.20);
+    --bg-base-tertiary: rgba(255, 255, 255, 0.16);
+
+    --background-floating: rgb(255, 255, 255);
+    --background-nested-floating: rgb(255, 255, 255);
+    --bg-surface-overlay: rgb(255, 255, 255);
+    --bg-surface-raised: rgb(255, 255, 255);
+    --modal-background: rgb(255, 255, 255);
+    --modal-footer-background: rgb(245, 245, 245);
+
+    --channeltextarea-background: rgba(255, 255, 255, 0.38);
+
+    --background-modifier-hover: rgba(0, 0, 0, 0.05);
+    --background-modifier-active: rgba(0, 0, 0, 0.07);
+    --background-modifier-selected: rgba(0, 0, 0, 0.08);
+}
+
+/* DARK MODE */
+.theme-dark {
+    --background-base-lowest: rgba(0, 0, 0, 0.35);
+    --background-base-lower: rgba(0, 0, 0, 0.28);
+    --background-base-low: rgba(0, 0, 0, 0.22);
+
+    --background-primary: rgba(0, 0, 0, 0.28);
+    --background-secondary: rgba(0, 0, 0, 0.24);
+    --background-secondary-alt: rgba(0, 0, 0, 0.20);
+    --background-tertiary: rgba(0, 0, 0, 0.18);
+
+    --bg-base-primary: rgba(0, 0, 0, 0.28);
+    --bg-base-secondary: rgba(0, 0, 0, 0.24);
+    --bg-base-tertiary: rgba(0, 0, 0, 0.20);
+
+    --background-floating: rgb(20, 20, 20);
+    --background-nested-floating: rgb(20, 20, 20);
+    --bg-surface-overlay: rgb(20, 20, 20);
+    --bg-surface-raised: rgb(20, 20, 20);
+    --modal-background: rgb(20, 20, 20);
+    --modal-footer-background: rgb(15, 15, 15);
+
+    --channeltextarea-background: rgba(0, 0, 0, 0.32);
+
+    --background-modifier-hover: rgba(255, 255, 255, 0.05);
+    --background-modifier-active: rgba(255, 255, 255, 0.07);
+    --background-modifier-selected: rgba(255, 255, 255, 0.08);
+}
+
+/* NORMAL DISCORD WORKSPACE */
+.visual-refresh [class*="chat_"],
+.visual-refresh [class*="chatContent_"],
+.visual-refresh [class*="messagesWrapper_"],
+.visual-refresh [class*="sidebarList_"],
+.visual-refresh [class*="membersWrap_"],
+.visual-refresh [class*="members_"] {
+    background-color: transparent !important;
+}
+
+/* SETTINGS / FULL OPACITY */
+.theme-light [role="dialog"]:has([class*="sidebar_"]) [data-mana-component="modal"],
+.theme-light [role="dialog"]:has([class*="sidebar_"]) [class*="container_"] {
+    background: rgb(255, 255, 255) !important;
+}
+
+.theme-dark [role="dialog"]:has([class*="sidebar_"]) [data-mana-component="modal"],
+.theme-dark [role="dialog"]:has([class*="sidebar_"]) [class*="container_"] {
+    background: rgb(20, 20, 20) !important;
+}
+
+/* POPOUTS / MENUS / DIALOGS */
+.theme-light [role="dialog"],
+.theme-light [role="menu"] {
+    --background-base-lowest: rgb(255, 255, 255);
+    --background-base-lower: rgb(255, 255, 255);
+    --background-base-low: rgb(250, 250, 250);
+    --background-primary: rgb(255, 255, 255);
+    --background-secondary: rgb(250, 250, 250);
+    --background-tertiary: rgb(245, 245, 245);
+    --bg-base-primary: rgb(255, 255, 255);
+    --bg-base-secondary: rgb(250, 250, 250);
+    --bg-base-tertiary: rgb(245, 245, 245);
+    --background-floating: rgb(255, 255, 255);
+}
+
+.theme-dark [role="dialog"],
+.theme-dark [role="menu"] {
+    --background-base-lowest: rgb(20, 20, 20);
+    --background-base-lower: rgb(20, 20, 20);
+    --background-base-low: rgb(24, 24, 24);
+    --background-primary: rgb(20, 20, 20);
+    --background-secondary: rgb(24, 24, 24);
+    --background-tertiary: rgb(28, 28, 28);
+    --bg-base-primary: rgb(20, 20, 20);
+    --bg-base-secondary: rgb(24, 24, 24);
+    --bg-base-tertiary: rgb(28, 28, 28);
+    --background-floating: rgb(20, 20, 20);
+}
+
+/* USER PROFILE MODAL */
+.theme-light [class*="user-profile-"],
+.theme-light .user-profile-modal-v2,
+.theme-light .user-profile-modal-v2 [class*="profileHeader_"],
+.theme-light .user-profile-modal-v2 [class*="profileBody_"] {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.theme-dark [class*="user-profile-"],
+.theme-dark .user-profile-modal-v2,
+.theme-dark .user-profile-modal-v2 [class*="profileHeader_"],
+.theme-dark .user-profile-modal-v2 [class*="profileBody_"] {
+    background-color: rgb(20, 20, 20) !important;
+}
+
+/* USER PANEL */
+.theme-light [class*="panels_"] {
+    background: rgba(255, 255, 255, 0.28) !important;
+}
+
+.theme-dark [class*="panels_"] {
+    background: rgba(0, 0, 0, 0.28) !important;
+}
+
+/* CHAT INPUT */
+.theme-light [class*="channelTextArea_"] {
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+
+.theme-dark [class*="channelTextArea_"] {
+    background: rgba(0, 0, 0, 0.32) !important;
+}
