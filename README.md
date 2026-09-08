@@ -1,109 +1,103 @@
 # discord-background
 
-A lightweight CSS theme that lets you use a custom background image in Discord.
+lightweight css theme that lets you use a custom background image in discord.
 
-It is designed for clients that support custom Discord themes, such as Vencord and BetterDiscord.
+designed for clients that support custom discord themes, such as vencord and betterdiscord.
 
-The theme keeps Discord's native fonts, colors, and general interface style while adding:
+the theme keeps discord's native fonts, colors, and general interface style while adding:
 
 - a custom wallpaper
 - transparency so the wallpaper shows through
-- support for both Light and Dark mode
+- support for both light and dark mode
 - optional multi-column server icons
 
-## Installation
+## installation
 
-Download:
+download:
 
 `custombackground.theme.css`
 
-Then add it to your Discord modification client as a custom theme.
+then add it to your discord modification client as a custom theme.
 
-For example, in Vencord, place the file in your themes folder and enable it from the Themes section.
+for example, in vencord, place the file in your themes folder and enable it from the *themes* settings.
 
-## Customize Your Wallpaper
+## customise your wallpaper
 
-Open `custombackground.theme.css` in any text editor.
+open `custombackground.theme.css` in any text editor.
 
-Find the section labeled:
+find the section labeled:
 
 `CUSTOMIZE HERE`
 
-Then find this line:
+then find this line:
 
 ```css
 --wallpaper: url('WALLPAPER-LINK');
 ```
 
-Replace `WALLPAPER-LINK` with a direct link to your image.
+replace `WALLPAPER-LINK` with a direct link to your image.
 
-Example:
+example:
 
 ```css
 --wallpaper: url('https://example.com/image.png');
 ```
 
-For best results, use a direct image URL.
+for best results, use a direct image url.
 
-The theme uses:
+the theme uses:
 
 ```css
 --wallpaper-size: cover;
 ```
 
-This automatically scales the image to fill the Discord window without tiling.
+to automatically scales the image to fill the discord window without tiling.
 
-## Server Columns
+## server columns
 
-The theme also supports optional multi-column server icons.
+the theme also supports optional multi-column server icons.
 
-Find this line:
+find this line:
 
 ```css
 --columns: 0;
 ```
 
-Change `0` to the number of columns you want.
+change `0` to the number of columns you want.
 
-Example:
+example:
 
 ```css
 --columns: 3;
 ```
 
-If you do not want multiple server columns, leave it at:
+if you do not want multiple server columns, leave it as is.
 
-```css
---columns: 0;
-```
+## light and dark mode
 
-## Light and Dark Mode
+use whichever mode works best with your wallpaper. both are supported.
 
-This theme supports both Discord Light Mode and Dark Mode.
+light wallpapers will usually look best with light mode, while darker wallpapers may look better with dark mode.
 
-Use whichever mode works best with your wallpaper.
+## notes
 
-Light wallpapers will usually look best with Light Mode, while darker wallpapers may look better with Dark Mode.
+- this theme does not replace discord's fonts or redesign the interface.
+- popouts, settings, menus, and profile modals remain opaque for readability.
+- the main discord workspace is transparent so your wallpaper can show through.
+- some discord updates may change internal class names and require small css fixes.
 
-## Notes
-
-- This theme does not replace Discord's fonts or redesign the interface.
-- Popouts, settings, menus, and profile modals remain opaque for readability.
-- The main Discord workspace is transparent so your wallpaper can show through.
-- Some Discord updates may change internal class names and require small CSS fixes.
-
-## Files
+## files
 
 ### `custombackground.theme.css`
 
-The main theme file.
+the main theme file.
 
 ### `servercolumns.css`
 
-Handles the optional multi-column server layout.
+handles the optional multi-column server layout.
 
-## Credits
+## credits
 
-Server column layout based on the original ServerColumns theme by mwittrien.
+server column layout based on the original ServerColumns theme by [mwittrien](https://github.com/mwittrien).
 
-Theme customization and background implementation by finney.
+theme customization and background implementation by finney.
