@@ -86,16 +86,6 @@ light wallpapers will usually look best with light mode, while darker wallpapers
 - the main discord workspace is transparent so your wallpaper can show through.
 - some discord updates may change internal class names and require small css fixes.
 
-## files
-
-### `custombackground.theme.css`
-
-the main theme file.
-
-### `servercolumns.css`
-
-handles the optional multi-column server layout.
-
 ## credits
 
 server column layout based on the original ServerColumns theme by [mwittrien](https://github.com/mwittrien).
