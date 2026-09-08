@@ -100,4 +100,4 @@ handles the optional multi-column server layout.
 
 server column layout based on the original ServerColumns theme by [mwittrien](https://github.com/mwittrien).
 
-theme customization and background implementation by finney.
+theme customization and background implementation by finnecre.
