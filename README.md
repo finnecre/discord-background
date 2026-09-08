@@ -1,7 +1,7 @@
 # discord-background
 
 this is a css file for a custom discord theme that can be used in any application that supports discord modifications, such as betterdiscord, vencord, etc.
-unlike other themes, there are zero altercations to the discord ui. all fonts, colours, opacities, and modals remain the same.
+unlike other themes, there are minimal altercations to the discord ui. all fonts, colours, opacities, and general interface remain the native.
 however, there is a server column option.
 
 **you are going to want to look for the file titled _custombackground.theme.css_**
