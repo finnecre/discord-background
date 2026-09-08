@@ -27,7 +27,7 @@ open `custombackground.theme.css` in any text editor.
 
 find the section labeled:
 
-`CUSTOMIZE HERE`
+`CUSTOMISE HERE`
 
 then find this line:
 
