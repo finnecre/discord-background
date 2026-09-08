@@ -18,6 +18,7 @@ to
 
 --wallpaper: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8whETZXv77tmCH5zpBLT1UGYir2E1WhxmlR-yQ9s2E9vucJUW_OULxg&s=10');
 
+-
 
 to add server columns, find the line that says --columns: 0; and replace the 0 with the desired number of columns. it is located shortly after the wallpaper line
 
