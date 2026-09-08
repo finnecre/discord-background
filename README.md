@@ -4,6 +4,7 @@ this is a css file for a custom discord theme that can be used in any applicatio
 unlike other themes, there are zero altercations to the discord ui. all fonts, colours, opacities, and modals remain the same.
 however, there is a server column option.
 
+**you are going to want to look for the file titled _custombackground.theme.css_**
 
 to customize the code, there is a section titled "customize here".
 
